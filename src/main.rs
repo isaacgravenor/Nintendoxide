@@ -10,6 +10,7 @@ pub struct MemoryMap {
 impl MemoryMap {
     pub fn new() -> Self {
         Self {
+<<<<<<< HEAD
             ram: cpu::RAM { data: [0; 0x2000] },
             ppu_registers: ppu::PRegisters {
                 ppuctrl: 0,
@@ -30,6 +31,11 @@ impl MemoryMap {
                 sp: 0,
                 sr: 0,
             },
+=======
+            ram: { data: [0; 0x2000] },
+            ppu_registers:  {},
+            cpu_registers: cpu::CRegisters {},
+>>>>>>> a0a4bcedd3f3c3d92caf4de07dfef38ab7cecdc9
         }
     }
 
